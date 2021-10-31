@@ -18,11 +18,16 @@ typedef enum ResultType {                                                       
     HIT,                                                                                              //
     BAD,                                                                                              //
 } ResultType;                                                                                         //
+                                                                                                      //
+typedef struct ResultCheck {                                                                          //
+    enum ResultType result_type;                                                                      //
+    const char *extra_info;                                                                           //
+} ResultCheck;                                                                                        //
                                        // DO NOT EDIT THIS PART!!!                                    //
 const char *PLUGIN_NAME();                                                                            //
                                                                                                       //
 const char *PLUGIN_VERSION();                                                                         //
                                                                                                       //
-enum ResultType get_combo_result(char *user, char *pass, char *proxy, enum ProxyType proxy_type);     //
+ResultCheck *get_combo_result(char *user, char *pass, char *proxy, enum ProxyType proxy_type);         //
                                                                                                       //
 #endif //PLUGIN_LIBRARY_H ----------------------------------------------------------------------------*/
