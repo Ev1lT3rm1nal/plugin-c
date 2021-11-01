@@ -28,6 +28,6 @@ const char *PLUGIN_NAME();                                                      
                                                                                                       //
 const char *PLUGIN_VERSION();                                                                         //
                                                                                                       //
-ResultCheck *get_combo_result(char *user, char *pass, char *proxy, enum ProxyType proxy_type);         //
+ResultCheck get_combo_result(char *user, char *pass, char *proxy, enum ProxyType proxy_type);         //
                                                                                                       //
 #endif //PLUGIN_LIBRARY_H ----------------------------------------------------------------------------*/
